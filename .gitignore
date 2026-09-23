@@ -1,0 +1,6 @@
+**/*.env
+# **/SESSION*
+**/secret*
+**/node_modules
+**/SESSION*
+**/TODO*

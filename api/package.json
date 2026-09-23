@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "description": "API that connects the client to the blockchain",
+  "keywords": [
+    "api",
+    "nft"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "joi": "^18.2.9",
+    "mongodb": "^7.6.0"
+  }
+}

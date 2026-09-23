@@ -1,0 +1,23 @@
+{
+  "name": "nft-mint",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "workspaces": ["client", "api"],
+  "author": "parsadotcom",
+  "description": "An NFT dashboard for minting NFTs",
+  "license": "MIT",
+  "keywords": [
+    "mint",
+    "nft",
+    "ERC721"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "nft-mint"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
