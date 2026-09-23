@@ -2,7 +2,10 @@
   "name": "nft-mint",
   "version": "0.1.0-alpha.1",
   "private": true,
-  "workspaces": ["client", "api"],
+  "workspaces": [
+    "client",
+    "api"
+  ],
   "author": "parsadotcom",
   "description": "An NFT dashboard for minting NFTs",
   "license": "MIT",
@@ -18,6 +21,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev:api": "npm run dev --workspace=api"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "tsx": "^4.23.15"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.3"
   }
 }

@@ -10,7 +10,8 @@
   "main": "main.ts",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "npx tsx watch ./main.ts"
   },
   "dependencies": {
     "cors": "^2.8.6",
