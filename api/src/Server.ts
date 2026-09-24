@@ -44,6 +44,7 @@ export class Server {
 
   plugDB() {
     this.db = new Database();
+    this.db.setupDB();
     return this;
   }
 

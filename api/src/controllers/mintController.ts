@@ -9,10 +9,10 @@ export default class MintController {
     this.#db = config.db;
   }
 
-  addNFTData = async (req: Request, res: Response) => {
+  handleMint = async (req: Request, res: Response) => {
     const { id, url} = req.body;
     console.log(`ID: ${id}, URL: ${url}`);
-    // TODO: add database interaction
+    await this.#db.addNFTData(id, url);
     res.json({
       success: true,
       message: "Mint was successful"

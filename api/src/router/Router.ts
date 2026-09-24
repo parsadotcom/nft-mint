@@ -14,7 +14,7 @@ export default class MainRouter {
 
   setupControllers() {
     const mintController = new MintController({ db: this.#db });
-    this.#router.post(MINT_ROUTE, mintController.addNFTData);
+    this.#router.post(MINT_ROUTE, mintController.handleMint);
     return this;
   }
 
